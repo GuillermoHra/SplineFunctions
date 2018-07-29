@@ -12,3 +12,5 @@ Work developed at the Biomechatronics group at MIT Media lab
 
 biomech.media.mit.edu
 
+![alt text](https://github.com/GuillermoHra/SplineFunctions/blob/master/CSTRajectory.png)
+

@@ -4,7 +4,7 @@ Functions that help to smooth trajectories for robotic systems
 
 Linear spline - Interpolation (trapezoidal control)
 
-Cubic spline - Cubic functions or s-curve (nice trajectory but more expensive)
+Cubic spline - Cubic functions or s-curve (nice trajectory but more computation)
 
 MATLAB and C codes are provided
 

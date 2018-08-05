@@ -1,6 +1,6 @@
 % Spline design
 % Functions cubicSpline and solveTridiagonalMatrix are required
-% Parameter to change: 
+% Parameters to change: 
 % joint_ang - initial joint angle
 % theta_set_fsm - final joint angle
 % firstf and secondf - cubic spline slope
@@ -15,7 +15,9 @@ clc
 
 % Initialize once
 time = 1;
+%-------------- User Input 1 --------------
 joint_ang = 14; % initial point
+%-------------- User Input 2 --------------
 theta_set_fsm = -10; % final point
 
 % % Linear Spline
@@ -24,8 +26,11 @@ theta_set_fsm = -10; % final point
 % y = [joint_ang theta_set_fsm]; 
 
 % Cubic Spline
-firstf = .4; 
-secondf = .6; 
+%-------------- User Input 3 --------------
+firstf = .5; 
+%-------------- User Input 4 --------------
+secondf = .5; 
+%-------------- User Input 5 --------------
 res_factor = 100; % delta X (time)
 x = [0 (res_factor/2)*firstf res_factor/2];
 yi_1 = joint_ang;
@@ -119,7 +124,6 @@ while time < 100
 end
 
 plot(X, Y, 'LineWidth', 3);
-
 legend('Trajectory (deg)');
 xlabel('Time (ms)');
 ylabel('Joint Angle (deg)');

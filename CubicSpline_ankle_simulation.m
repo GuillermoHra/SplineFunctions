@@ -155,5 +155,5 @@ plot(X, Y, 'LineWidth', 3);
 %legend('Joint Acc (deg/s/s)', 'Joint Angle (deg)', 'Theta des (deg)', 'Motor Torque', 'Motor Acc/10', 'Motor Jerk/10');
 legend('Joint Angle (deg)', 'Trajectory (deg)');
 xlabel('Time (ms)');
-%ylabel('Joint Angle (deg)');
+ylabel('Joint Angle (deg)');
 title('Cubic Spline Trajectory');
